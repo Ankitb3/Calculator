@@ -32,7 +32,7 @@ form input{
     box-shadow: inset 2px green;
     text-align:right;
     pointer-events: none;
-    color: white;
+    color: black;
 }
 .buttons{
     display: flex;
