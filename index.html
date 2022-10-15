@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="text/javascript" href="./calc.js">
 </head>
 <body>
     <section class="calculator">
@@ -14,29 +15,29 @@
             <input type="text" class="screen" name="display" />
         </form>
         <div class="buttons">
-            <button type="button" class="btn btn-yellow">*</button> 
-             <button type="button" class="btn btn-yellow">/</button>
-             <button type="button" class="btn btn-yellow">-</button>
-             <button type="button" class="btn btn-yellow">+</button>
+            <button type="button" class="btn btn-yellow" onclick="btall('*')">*</button> 
+             <button type="button" class="btn btn-yellow" onclick="btall('/')">/</button>
+             <button type="button" class="btn btn-yellow" onclick="btall('-')">-</button>
+             <button type="button" class="btn btn-yellow" onclick="btall('+')">+</button>
 
 
-        <button type="button" class="btn btn-grey" name="9" value="9" onclick="a">9</button>
-        <button type="button" class="btn btn-grey" name="8" value="8">8</button>
-        <button type="button" class="btn btn-grey" name="7" value="7">7</button>
-        <button type="button" class="btn btn-grey" name="6" value="6">6</button>
-        <button type="button" class="btn btn-grey" name="5" value="5">5</button>
-        <button type="button" class="btn btn-grey" name="4" value="4">4</button>
-        <button type="button" class="btn btn-grey" name="3" value="3">3</button>
-        <button type="button" class="btn btn-grey" name="2" value="2">2</button>
-        <button type="button" class="btn btn-grey" name="1" value="1">1</button>
-        <button type="button" class="btn btn-grey" name="0" value="0">0</button>
-        <button type="button" class="btn btn-grey">.</button>
+        <button type="button" class="btn btn-grey" name="9" onclick="btall(9)">9</button>
+        <button type="button" class="btn btn-grey" name="8" value="8" onclick="btall(8)">8</button>
+        <button type="button" class="btn btn-grey" name="7" value="7" onclick="btall(7)">7</button>
+        <button type="button" class="btn btn-grey" name="6" value="6" onclick="btall(6)">6</button>
+        <button type="button" class="btn btn-grey" name="5" value="5" onclick="btall(5)">5</button>
+        <button type="button" class="btn btn-grey" name="4" value="4" onclick="btall(4)">4</button>
+        <button type="button" class="btn btn-grey" name="3" value="3" onclick="btall(3)">3</button>
+        <button type="button" class="btn btn-grey" name="2" value="2" onclick="btall(2)">2</button>
+        <button type="button" class="btn btn-grey" name="1" value="1" onclick="btall(1)">1</button>
+        <button type="button" class="btn btn-grey" name="0" value="0" onclick="btall(0)">0</button>
+        <button type="button" class="btn btn-grey" onclick="btall('.')">.</button>
 
-        <button type="button" value="=" class="btn btn-equal">=</button>
-        <button type="button" class="btn btn-clear">C</button>
+        <button type="button" value="=" class="btn btn-equal" onclick="calculate()">=</button>
+        <button type="button" class="btn btn-clear" onclick="clears()">C</button>
 
         </div>
     </section>
-
+    <script src="./calc.js"></script>
 </body>
 </html>
